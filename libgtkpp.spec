@@ -1,5 +1,5 @@
-Summary:	Wraps Gtk+ with an object oriented look
-Summary(pl):	Obudowanie Gtk+ w sposób zorientowany obiektowo
+Summary:	Wraps GTK+ with an object oriented look
+Summary(pl):	Obudowanie GTK+ w sposób zorientowany obiektowo
 Name:		libgtkpp
 Version:	0.2.4
 Release:	1
@@ -18,10 +18,10 @@ BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-C++ library which wraps Gtk+ with an object oriented look.
+C++ library which wraps GTK+ with an object oriented look.
 
 %description -l pl
-Biblioteka C++ obudowuj±ca Gtk+ w sposób bardziej zorientowany
+Biblioteka C++ obudowuj±ca GTK+ w sposób bardziej zorientowany
 obiektowo.
 
 %package devel

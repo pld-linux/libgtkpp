@@ -1,18 +1,19 @@
 Summary:	Wraps Gtk+ with an object oriented look
 Summary(pl):	Obudowanie Gtk+ w sposób zorientowany obiektowo
 Name:		libgtkpp
-Version:	0.2.1
+Version:	0.2.4
 Release:	1
 License:	GPL v2
 Group:		X11/Libraries
 Source0:	ftp://ftp.defora.org/pub/projects/Gtkpp/%{name}-%{version}.tar.gz
-# Source0-md5:	1ad01213a6e3c2ba107c8ee65320ec0d
+# Source0-md5:	53b13501401693e268fb834188b5bd0f
 Patch0:		%{name}-includes.patch
 URL:		http://www.defora.org/foreign/projects/libgtkpp/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel
-BuildRequires:	gtk+-devel
+BuildRequires:	gnome-libs-devel
+BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,7 +28,10 @@ obiektowo.
 Summary:	Header files for gtkpp
 Summary(pl):	Pliki nag³ówkowe gtkpp
 Group:		X11/Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
+Requires:	gdk-pixbuf-devel
+Requires:	gnome-libs-devel
+Requires:	libstdc++-devel
 
 %description devel
 Header files for gtkpp library.
@@ -39,7 +43,7 @@ Pliki nag³ówkowe biblioteki gtkpp.
 Summary:	Static gtkpp library
 Summary(pl):	Statyczna biblioteka gtkpp
 Group:		X11/Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static gtkpp library.
@@ -52,7 +56,6 @@ Statyczna biblioteka gtkpp.
 %patch0 -p1
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal} -I %{_aclocaldir}/gnome
 %{__autoconf}

@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Libraries
 Source0:	ftp://ftp.defora.org/pub/projects/Gtkpp/%{name}-%{version}.tar.gz
+# Source0-md5:	1ad01213a6e3c2ba107c8ee65320ec0d
 Patch0:		%{name}-includes.patch
 URL:		http://www.defora.org/foreign/projects/libgtkpp/
 BuildRequires:	autoconf

@@ -1,0 +1,18 @@
+--- ./src/Makefile.am.org	Wed Aug 21 13:00:45 2002
++++ ./src/Makefile.am	Wed Feb  5 10:23:43 2003
+@@ -1,4 +1,4 @@
+-CXXFLAGS += -Wall
++CXXFLAGS = -Wall
+ 
+ libgtkppincludedir = $(includedir)/gtkpp
+ 
+@@ -7,7 +7,8 @@
+ INCLUDES = \
+ -I$(top_srcdir)/intl \
+ $(GNOME_INCLUDEDIR) \
+--I/usr/include/gdk-pixbuf-1.0
++-I/usr/include/gdk-pixbuf-1.0 \
++-I/usr/X11R6/include/gdk-pixbuf-1.0
+ #$(GTKHTML_INCLUDEDIR)
+ 
+ libgtkpp_la_LDFLAGS = -release 0.2.1

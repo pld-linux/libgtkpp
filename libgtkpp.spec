@@ -7,6 +7,7 @@ License:	GPL v2
 Group:		X11/Libraries
 Source0:	ftp://ftp.defora.org/pub/projects/Gtkpp/%{name}-%{version}.tar.gz
 Patch0:		%{name}-includes.patch
+URL:		http://www.defora.org/foreign/projects/libgtkpp/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gdk-pixbuf-devel

@@ -1,5 +1,5 @@
 Summary:	Wraps GTK+ with an object oriented look
-Summary(pl):	Obudowanie GTK+ w spos骲 zorientowany obiektowo
+Summary(pl.UTF-8):   Obudowanie GTK+ w spos贸b zorientowany obiektowo
 Name:		libgtkpp
 Version:	0.2.4
 Release:	1
@@ -20,13 +20,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 C++ library which wraps GTK+ with an object oriented look.
 
-%description -l pl
-Biblioteka C++ obudowuj眂a GTK+ w spos骲 bardziej zorientowany
+%description -l pl.UTF-8
+Biblioteka C++ obudowuj膮ca GTK+ w spos贸b bardziej zorientowany
 obiektowo.
 
 %package devel
 Summary:	Header files for gtkpp
-Summary(pl):	Pliki nag丑wkowe gtkpp
+Summary(pl.UTF-8):   Pliki nag艂贸wkowe gtkpp
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gdk-pixbuf-devel
@@ -36,19 +36,19 @@ Requires:	libstdc++-devel
 %description devel
 Header files for gtkpp library.
 
-%description devel -l pl
-Pliki nag丑wkowe biblioteki gtkpp.
+%description devel -l pl.UTF-8
+Pliki nag艂贸wkowe biblioteki gtkpp.
 
 %package static
 Summary:	Static gtkpp library
-Summary(pl):	Statyczna biblioteka gtkpp
+Summary(pl.UTF-8):   Statyczna biblioteka gtkpp
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static gtkpp library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka gtkpp.
 
 %prep

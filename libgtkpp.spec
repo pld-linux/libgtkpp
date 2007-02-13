@@ -1,5 +1,5 @@
 Summary:	Wraps GTK+ with an object oriented look
-Summary(pl.UTF-8):   Obudowanie GTK+ w sposób zorientowany obiektowo
+Summary(pl.UTF-8):	Obudowanie GTK+ w sposób zorientowany obiektowo
 Name:		libgtkpp
 Version:	0.2.4
 Release:	1
@@ -26,7 +26,7 @@ obiektowo.
 
 %package devel
 Summary:	Header files for gtkpp
-Summary(pl.UTF-8):   Pliki nagłówkowe gtkpp
+Summary(pl.UTF-8):	Pliki nagłówkowe gtkpp
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	gdk-pixbuf-devel
@@ -41,7 +41,7 @@ Pliki nagłówkowe biblioteki gtkpp.
 
 %package static
 Summary:	Static gtkpp library
-Summary(pl.UTF-8):   Statyczna biblioteka gtkpp
+Summary(pl.UTF-8):	Statyczna biblioteka gtkpp
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
